@@ -3,8 +3,8 @@
 .header {
   display: flex;
   width: 100%;
-  margin: 92px 0;
-  padding: 0 50px;
+  margin: 90px 0;
+  padding: 0 43px;
   justify-content: space-between;
   align-items: center;
   font-size: 18px;
@@ -13,8 +13,7 @@
 .header_links-list {
   display: flex;
   list-style: circle;
-  width: 388px;
-  justify-content: space-between;
+  gap: 28px;
 }
 
 .header_links-list-item_no-bullit {
@@ -26,31 +25,31 @@
 }
 
 .header_link {
-  text-underline-offset: 4px;
+  text-underline-offset: 5px;
+  line-height: 24px;
 }
 
 .header_logo {
   display: block;
-  width: 148px;
+  width: 135px;
   height: 105px;
-}
-
-.header_logo-image {
-  margin-left: -71px;
+  position: relative;
+  right: 75px;
 }
 
 .address {
   font-size: 18px;
-  line-height: 24px;
   font-weight: 400;
   width: 240px;
-  height: 97px;
+  height: 100%;
   font-style: normal;
+  line-height: 24px;
 }
+
 
 .cover {
   width: 100%;
-  margin: 0 auto;
+  margin: 0 auto 180px;
   background-image: url(../images/cover.jpg);
   background-position: center;
   background-size: cover;
@@ -72,9 +71,10 @@
 
 .cover_title {
   padding: 165px 50px 0px 50px;
+  margin-bottom: 130px;
   font-size: 100px;
   font-weight: 700;
-  letter-spacing: 30px;
+  letter-spacing: 0.3em;
   text-transform: uppercase;
   position: relative;
   z-index: 1;
@@ -82,13 +82,14 @@
 
 .aligned-text {
   display: block;
-  margin-bottom: 7px;
+  margin-bottom: 6px;
+  line-height: 115%;
 }
 
 .aligned-text_center {
   display: block;
   text-align: center;
-  margin-bottom: 4px;
+  margin-bottom: 6px;
 }
 
 .aligned-text_right {
@@ -97,7 +98,7 @@
 }
 
 .letter-spacing-extended {
-  letter-spacing: 60px;
+  letter-spacing: 0.6em;
 }
 
 .no-letter-spacing {
@@ -105,66 +106,61 @@
 }
 
 .cover_description {
-  position: relative;
-  z-index: 1;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 80px;
+  padding-right: 48px;
+  padding-bottom: 50px;
 }
 
 .cover_description-text {
-  text-align: center;
   font-size: 22px;
   font-weight: 400;
   line-height: 28px;
   text-transform: uppercase;
-  font-style: normal;
-  margin-top: 143px;
-  padding-bottom: 65px;
-  word-spacing: 18px;
+  
+  word-spacing: 0.8em;
+  z-index: 1;
 }
 
 .bet-button {
-  position: absolute;
-  bottom: 53px;
-  right: 55px;
   background-color: transparent;
-  border-color: #fff;
+  border-color: currentColor;
   width: 257px;
   height: 52px;
-  padding: 0;
   color: #fff;
   text-align: center;
   font-size: 22px;
   font-weight: 400;
   text-transform: uppercase;
+  z-index: 1;
 }
 
 .lots {
   display: flex;
   flex-direction: column;
-  min-height: 579px;
-  margin-top: 180px;
   padding: 0 40px;
+  gap: 28px;
 }
 
 .lots__heading {
-  display: flex;
-  align-items: start;
   margin-left: 40px;
-  min-height: 74px;
   font-size: 40px;
   font-weight: 700;
   text-transform: uppercase;
+  line-height: normal;
 }
 
 .lots_card-list {
   display: flex;
   flex-wrap: wrap;
   gap: 25px;
-  min-height: 450px;
 }
 
 .lots_card-list-item {
   width: 430px;
-  height: 450px;
+  min-height: 450px;
   flex-grow: 1;
   position: relative;
 }
@@ -174,8 +170,11 @@
   flex-direction: column;
   justify-content: space-between;
   padding: 50px 40px;
-  min-height: 450px;
+  height: 100%;
   position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .card_title {
@@ -197,36 +196,19 @@
   z-index: 1;
 }
 
-.card-link {
-  text-decoration: none;
-	display: block;
-}
-
 .card_type_film {
   background-image: url(../images/card-lot-01.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .card_type_book {
   background-image: url(../images/card-lot-02.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .card_type_picture {
   background-image: url(../images/card-lot-03.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .lots_look-more-link {
-  display: flex;
-  align-items: end;
-  height: 50px;
   margin-left: 40px;
   font-size: 20px;
   font-weight: 400;
@@ -242,23 +224,21 @@
 }
 
 .about_logo {
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 240px;
   height: 240px;
   background-color: rgb(0, 0, 0);
-  border-radius: 120px;
+  border-radius: 50%;
 }
 
 .about_logo-image {
+  display: block;
   width: 148px;
   height: 114px;
-  position: absolute;
-  margin: auto;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  right: 0;
 }
+
 .about_main {
   display: flex;
   flex-direction: column;
@@ -269,8 +249,7 @@
   font-size: 40px;
   font-weight: 700;
   text-transform: uppercase;
-	line-height: 205px;
-  padding-top: 18px;
+	margin: 100px 0 75px;
 }
 
 .about_text {
@@ -306,8 +285,8 @@
 
 .footer_social-list {
   display: flex;
-  min-width: 240px;
   justify-content: space-between;
+  gap: 48px;
 }
 
 .footer_social-link {
