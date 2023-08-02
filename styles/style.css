@@ -4,8 +4,7 @@
   display: grid;
   grid-template-columns: 1fr auto 1fr;
   width: 100%;
-  margin: 90px 0;
-  padding: 0 43px;
+  padding: 94px 32px 92px 50px;
   align-items: center;
   font-size: 18px;
 }
@@ -30,19 +29,26 @@
 }
 
 .header_logo {
-  display: block;
+  display: flex;
   width: 135px;
   height: 105px;
   justify-self: center;
 }
 
+.header_logo-image {
+  display: block;
+  flex-shrink: 0;
+}
+
 .address {
+  display: grid;
+  align-items: center;
   font-size: 18px;
   font-weight: 400;
   width: 240px;
   height: 100%;
   font-style: normal;
-  line-height: 24px;
+  line-height: 24.3px;
 }
 
 .header_address {
@@ -51,7 +57,6 @@
 
 .address_link {
   text-underline-offset: 5px;
-  line-height: 24px;
 }
 
 .cover {
@@ -78,8 +83,7 @@
 }
 
 .cover_title {
-  padding: 165px 50px 0px 50px;
-  margin-bottom: 130px;
+  padding: 165px 37px 123px 50px;
   font-size: 100px;
   font-weight: 700;
   letter-spacing: 0.3em;
@@ -90,7 +94,7 @@
 
 .aligned-text {
   display: block;
-  margin-bottom: 6px;
+  margin-bottom: 10px;
 }
 
 .aligned-text:first-child {
@@ -122,7 +126,7 @@
   justify-content: end;
   align-items: center;
   gap: 80px;
-  padding-right: 48px;
+  padding-right: 33px;
   padding-bottom: 50px;
 }
 
@@ -152,7 +156,7 @@
 .lots {
   display: flex;
   flex-direction: column;
-  padding: 0 40px;
+  padding: 0 33px 0 50px;
   gap: 28px;
 }
 
@@ -200,7 +204,7 @@
   font-weight: 700;
   line-height: 120%;
   text-decoration-line: underline;
-  text-underline-offset: 4px;
+  text-underline-offset: 3px;
   text-transform: uppercase;
   z-index: 1;
 }
@@ -236,7 +240,7 @@
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 20px;
-  padding: 0 40px;
+  padding: 0 40px 0 45px;
   margin-top: 181px;
   justify-items: center;
 }
@@ -267,7 +271,7 @@
   font-size: 40px;
   font-weight: 700;
   text-transform: uppercase;
-  margin: 100px 0 75px;
+  padding: 100px 0 76px;
 }
 
 .about_text {
@@ -278,9 +282,7 @@
 .footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  margin-top: 180px;
-  margin-bottom: 90px;
-  padding: 0 50px;
+  padding: 180px 33px 90px 50px;
   
 }
 
